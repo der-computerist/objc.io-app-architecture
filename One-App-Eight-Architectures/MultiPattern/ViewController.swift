@@ -30,7 +30,7 @@ class MultiViewController: UIViewController, UITextFieldDelegate {
 	var minimalObserver: NSObjectProtocol?
 	
 	var viewModel: ViewModel?
-	var mvvmObserver: Cancellable?
+//	var mvvmObserver: Cancellable?
 	
 	var viewState: ViewState?
 	var viewStateModelObserver: NSObjectProtocol?
@@ -38,7 +38,7 @@ class MultiViewController: UIViewController, UITextFieldDelegate {
 	
 	var driver: Driver<TEAState, TEAState.Action>?
 	
-	var viewStateAdapter: Var<String>!
+//	var viewStateAdapter: Var<String>!
 	
 	var cleanPresenter: CleanPresenter!
 	
@@ -49,10 +49,10 @@ class MultiViewController: UIViewController, UITextFieldDelegate {
 		mvcDidLoad()
 		mvpDidLoad()
 		mvvmMinimalDidLoad()
-		mvvmDidLoad()
+//		mvvmDidLoad()
 		mvcvsDidLoad()
 		teaDidLoad()
-		mavbDidLoad()
+//		mavbDidLoad()
 		cleanDidLoad()
 	}
 }
@@ -161,12 +161,12 @@ extension MultiViewController {
 class ViewModel {
 	let model: Model
     
-    var textFieldValue: Signal<String> {
-        return Signal
-            .notifications(name: Model.textDidChange)
-            .compactMap { note in note.userInfo?[Model.textKey] as? String }
-            .continuous(initialValue: model.value)
-    }
+//    var textFieldValue: Signal<String> {
+//        return Signal
+//            .notifications(name: Model.textDidChange)
+//            .compactMap { note in note.userInfo?[Model.textKey] as? String }
+//            .continuous(initialValue: model.value)
+//    }
     
 	init(model: Model) {
 		self.model = model
@@ -178,11 +178,11 @@ class ViewModel {
 }
 
 extension MultiViewController {
-	func mvvmDidLoad() {
-		viewModel = ViewModel(model: model)
-		mvvmObserver = viewModel!.textFieldValue
-			.subscribeValues { [unowned self] (str) in self.mvvmTextField.text = str }
-	}
+//	func mvvmDidLoad() {
+//		viewModel = ViewModel(model: model)
+//		mvvmObserver = viewModel!.textFieldValue
+//			.subscribeValues { [unowned self] (str) in self.mvvmTextField.text = str }
+//	}
     
 	@IBAction func mvvmButtonPressed() {
 		viewModel?.commit(value: self.mvvmTextField.text ?? "")
@@ -267,25 +267,25 @@ extension MultiViewController {
 
 // MAVB ---------------------------------------------------------
 
-extension MultiViewController {
-	func mavbDidLoad() {
-		viewStateAdapter = Var(model.value)
-		
-		TextField(
-			.text <-- Signal
-				.notifications(name: Model.textDidChange)
-				.compactMap { note in note.userInfo?[Model.textKey] as? String }
-				.startWith(model.value),
-			.didChange --> Input().map { $0.text }.bind(to: viewStateAdapter)
-		).applyBindings(to: mavbTextField)
-		
-		Button(
-			.action(.primaryActionTriggered) --> Input()
-				.trigger(viewStateAdapter)
-				.subscribeValuesUntilEnd { [model] value in model.value = value }
-		).applyBindings(to: mavbButton)
-	}
-}
+//extension MultiViewController {
+//	func mavbDidLoad() {
+//		viewStateAdapter = Var(model.value)
+//		
+//		TextField(
+//			.text <-- Signal
+//				.notifications(name: Model.textDidChange)
+//				.compactMap { note in note.userInfo?[Model.textKey] as? String }
+//				.startWith(model.value),
+//			.didChange --> Input().map { $0.text }.bind(to: viewStateAdapter)
+//		).applyBindings(to: mavbTextField)
+//		
+//		Button(
+//			.action(.primaryActionTriggered) --> Input()
+//				.trigger(viewStateAdapter)
+//				.subscribeValuesUntilEnd { [model] value in model.value = value }
+//		).applyBindings(to: mavbButton)
+//	}
+//}
 
 
 // "Clean" ---------------------------------------------------------

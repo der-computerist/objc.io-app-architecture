@@ -13,14 +13,6 @@
 		C94FE8C5205AECBF00000EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94FE8C4205AECBF00000EE6 /* Assets.xcassets */; };
 		C94FE8C8205AECBF00000EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94FE8C6205AECBF00000EE6 /* LaunchScreen.storyboard */; };
 		C94FE8D0205AF07B00000EE6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8CF205AF07B00000EE6 /* Model.swift */; };
-		C94FE8DA205B1BE700000EE6 /* CwlViewsPlatform_iOS2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8D2205B1BE600000EE6 /* CwlViewsPlatform_iOS2.swift */; };
-		C94FE8DB205B1BE700000EE6 /* CwlViewsPlatform_iOS3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8D3205B1BE600000EE6 /* CwlViewsPlatform_iOS3.swift */; };
-		C94FE8DC205B1BE700000EE6 /* CwlViewsPlatform_iOS1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8D4205B1BE600000EE6 /* CwlViewsPlatform_iOS1.swift */; };
-		C94FE8DD205B1BE700000EE6 /* CwlSignalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8D5205B1BE600000EE6 /* CwlSignalExtensions.swift */; };
-		C94FE8DE205B1BE700000EE6 /* CwlViewsCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8D6205B1BE600000EE6 /* CwlViewsCommon.swift */; };
-		C94FE8DF205B1BE700000EE6 /* CwlSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8D7205B1BE600000EE6 /* CwlSignal.swift */; };
-		C94FE8E0205B1BE700000EE6 /* CwlUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8D8205B1BE600000EE6 /* CwlUtils.swift */; };
-		C94FE8E1205B1BE700000EE6 /* CwlViewsCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8D9205B1BE600000EE6 /* CwlViewsCore.swift */; };
 		C94FE8E3205B7A7C00000EE6 /* KeyboardSizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8E2205B7A7C00000EE6 /* KeyboardSizedView.swift */; };
 		C94FE8E7205D5E6500000EE6 /* Elm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FE8E6205D5E6500000EE6 /* Elm.swift */; };
 /* End PBXBuildFile section */
@@ -34,14 +26,6 @@
 		C94FE8C7205AECBF00000EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C94FE8C9205AECBF00000EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C94FE8CF205AF07B00000EE6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		C94FE8D2205B1BE600000EE6 /* CwlViewsPlatform_iOS2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwlViewsPlatform_iOS2.swift; sourceTree = "<group>"; };
-		C94FE8D3205B1BE600000EE6 /* CwlViewsPlatform_iOS3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwlViewsPlatform_iOS3.swift; sourceTree = "<group>"; };
-		C94FE8D4205B1BE600000EE6 /* CwlViewsPlatform_iOS1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwlViewsPlatform_iOS1.swift; sourceTree = "<group>"; };
-		C94FE8D5205B1BE600000EE6 /* CwlSignalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwlSignalExtensions.swift; sourceTree = "<group>"; };
-		C94FE8D6205B1BE600000EE6 /* CwlViewsCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwlViewsCommon.swift; sourceTree = "<group>"; };
-		C94FE8D7205B1BE600000EE6 /* CwlSignal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwlSignal.swift; sourceTree = "<group>"; };
-		C94FE8D8205B1BE600000EE6 /* CwlUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwlUtils.swift; sourceTree = "<group>"; };
-		C94FE8D9205B1BE600000EE6 /* CwlViewsCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwlViewsCore.swift; sourceTree = "<group>"; };
 		C94FE8E2205B7A7C00000EE6 /* KeyboardSizedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardSizedView.swift; sourceTree = "<group>"; };
 		C94FE8E6205D5E6500000EE6 /* Elm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,24 +69,8 @@
 				C94FE8C9205AECBF00000EE6 /* Info.plist */,
 				C94FE8CF205AF07B00000EE6 /* Model.swift */,
 				C94FE8E2205B7A7C00000EE6 /* KeyboardSizedView.swift */,
-				C94FE8D1205B1BE600000EE6 /* CwlViews */,
 			);
 			path = MultiPattern;
-			sourceTree = "<group>";
-		};
-		C94FE8D1205B1BE600000EE6 /* CwlViews */ = {
-			isa = PBXGroup;
-			children = (
-				C94FE8D2205B1BE600000EE6 /* CwlViewsPlatform_iOS2.swift */,
-				C94FE8D3205B1BE600000EE6 /* CwlViewsPlatform_iOS3.swift */,
-				C94FE8D4205B1BE600000EE6 /* CwlViewsPlatform_iOS1.swift */,
-				C94FE8D5205B1BE600000EE6 /* CwlSignalExtensions.swift */,
-				C94FE8D6205B1BE600000EE6 /* CwlViewsCommon.swift */,
-				C94FE8D7205B1BE600000EE6 /* CwlSignal.swift */,
-				C94FE8D8205B1BE600000EE6 /* CwlUtils.swift */,
-				C94FE8D9205B1BE600000EE6 /* CwlViewsCore.swift */,
-			);
-			path = CwlViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,19 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C94FE8DF205B1BE700000EE6 /* CwlSignal.swift in Sources */,
 				C94FE8E3205B7A7C00000EE6 /* KeyboardSizedView.swift in Sources */,
-				C94FE8E1205B1BE700000EE6 /* CwlViewsCore.swift in Sources */,
-				C94FE8DC205B1BE700000EE6 /* CwlViewsPlatform_iOS1.swift in Sources */,
 				C94FE8D0205AF07B00000EE6 /* Model.swift in Sources */,
 				C94FE8C0205AECBD00000EE6 /* ViewController.swift in Sources */,
 				C94FE8BE205AECBD00000EE6 /* AppDelegate.swift in Sources */,
-				C94FE8DE205B1BE700000EE6 /* CwlViewsCommon.swift in Sources */,
-				C94FE8DA205B1BE700000EE6 /* CwlViewsPlatform_iOS2.swift in Sources */,
-				C94FE8DB205B1BE700000EE6 /* CwlViewsPlatform_iOS3.swift in Sources */,
-				C94FE8E0205B1BE700000EE6 /* CwlUtils.swift in Sources */,
 				C94FE8E7205D5E6500000EE6 /* Elm.swift in Sources */,
-				C94FE8DD205B1BE700000EE6 /* CwlSignalExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
