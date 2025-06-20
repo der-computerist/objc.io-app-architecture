@@ -61,10 +61,18 @@ class MultiViewController: UIViewController, UITextFieldDelegate {
 // MVC ---------------------------------------------------------
 
 extension MultiViewController {
+    
 	func mvcDidLoad() {
+        // Populate the view with data from the model.
 		mvcTextField.text = model.value
-		mvcObserver = NotificationCenter.default.addObserver(forName: Model.textDidChange, object: nil, queue: nil) { [mvcTextField] (note) in
-			mvcTextField?.text = note.userInfo?[Model.textKey] as? String
+        
+        // Observe the model.
+		mvcObserver = NotificationCenter.default.addObserver(
+            forName: Model.textDidChange,
+            object: nil,
+            queue: nil
+        ) { [weak self] note in
+            self?.mvcTextField.text = note.userInfo?[Model.textKey] as? String
 		}
 	}
 	

@@ -6,7 +6,11 @@ class Model {
 	
 	var value: String {
 		didSet {
-			NotificationCenter.default.post(name: Model.textDidChange, object: self, userInfo: [Model.textKey: value])
+			NotificationCenter.default.post(
+                name: Model.textDidChange,
+                object: self,
+                userInfo: [Model.textKey: value]
+            )
 		}
 	}
     
