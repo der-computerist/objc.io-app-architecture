@@ -1,1 +1,7 @@
+### Xcode ###
+# User settings
+xcuserdata/
+
+### macOS ###
+# General
 .DS_Store
